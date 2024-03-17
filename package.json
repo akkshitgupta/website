@@ -15,6 +15,7 @@
     "generate:videos": "node scripts/build-newsroom-videos.js",
     "generate:tools": "node scripts/build-tools.js",
     "test:components": "npx cypress run --component",
+    "test:jest": "jest",
     "cy:open": "cypress open",
     "cy:run": "cypress run"
   },
@@ -101,12 +102,17 @@
   },
   "devDependencies": {
     "@anshgoyalevil/eslint-config": "^1.0.3",
+    "@babel/core": "^7.24.0",
+    "@babel/preset-env": "^7.24.0",
     "@cypress/react": "^7.0.3",
     "@netlify/functions": "^1.4.0",
     "@netlify/plugin-nextjs": "^4.40.2",
+    "@types/jest": "^29.5.12",
+    "babel-jest": "^29.7.0",
     "cypress": "^10.11.0",
     "dedent": "^0.7.0",
     "inquirer": "^8.2.0",
+    "jest": "^29.7.0",
     "postcss-import": "^14.1.0"
   }
 }
